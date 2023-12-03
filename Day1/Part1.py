@@ -13,10 +13,7 @@ with open('input.txt', 'r') as file:
     for line in file:
         # Process the line and strip /n character
         processed_line = line.strip()
-        print(processed_line)
         first_digit, last_digit = find_first_and_last_digits(processed_line)
-        print(first_digit)
-        print(last_digit)
 
         if first_digit is not None and last_digit is not None:
             calibration_values += int(f"{first_digit}{last_digit}")
