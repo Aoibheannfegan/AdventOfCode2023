@@ -33,8 +33,6 @@ def game_possible(string):
 with open('input.txt', 'r') as file:
     for line in file:
         processed_line = line.strip()
-        #get game id
-        game_id = int(processed_line.split(':')[0].split()[1])
         power_of = game_possible(processed_line)
         possible_games_count += power_of
 
